@@ -71,7 +71,7 @@ All the unit tests are present within the `__test__` folder.
 ## Data for the application
 The data for the application is fetched using mock server written using `miragejs`. The mocked data will be used in all three modes: development, test and production. The mock server is available in the file `mock-server.js`
 
-## Application in Dev mode
+## Application in Development mode
 The entire application is dockerized. Hence navigating to the project directory (where the `Dockerfile` is located and contains the `src` directory) and running `docker compose up dev` will run the docker container in development mode accessible from `http://localhost:3000`
 
 Note: Run `docker compose stop` to stop the docker containers.
