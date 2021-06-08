@@ -30,7 +30,7 @@ You will need the following installed before running the application
 
 ## Steps to install
  1. Git clone [zendesk-coding-challenge](https://github.com/Aishwarya55/zendesk-coding-challenge.git) or download zip
- 2. Run the App by typing `docker-up:dev`. This runs the application in the development mode and the application can directly be accessed by navigating to `http://localhost:3000` in your web browser.
+ 2. Run the App by typing `docker compose up dev`. This runs the application in the development mode and the application can directly be accessed by navigating to `http://localhost:3000` in your web browser.
 
  # About the application and Usage
  ## Project Structure
