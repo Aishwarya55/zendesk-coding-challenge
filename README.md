@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/react-17.0.2-blue">
 <img src="https://img.shields.io/badge/axios-0.21.0-brightgreen">
 <img src="https://img.shields.io/badge/react_dom-17.10.2-yellow">
-<img src="https://img.shields.io/badge/reduc-thunk-2.3.0-purple">
+<img src="https://img.shields.io/badge/reduc_thunk-2.3.0-purple">
 <img src="https://img.shields.io/badge/react_redux-7.2.4-orange">
 </p>
 
