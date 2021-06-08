@@ -30,7 +30,7 @@ You will need the following installed before running the application
 
 ## Steps to install
  1. Git clone [zendesk-coding-challenge](https://github.com/Aishwarya55/zendesk-coding-challenge.git) or download zip
- 2. Run the App by typing `docker compose up dev`. This runs the application in the development mode and the application can directly be accessed by navigating to `http://localhost:3000` in your web browser.
+ 2. Run the App by typing `docker-compose up dev`. This runs the application in the development mode and the application can directly be accessed by navigating to `http://localhost:3000` in your web browser.
 
  # About the application and Usage
  ## Project Structure
@@ -72,23 +72,23 @@ All the unit tests are present within the `__test__` folder.
 The data for the application is fetched using mock server written using `miragejs`. The mocked data will be used in all three modes: development, test and production. The mock server is available in the file `mock-server.js`
 
 ## Application in Development mode
-The entire application is dockerized. Hence navigating to the project directory (where the `Dockerfile` is located and contains the `src` directory) and running `docker compose up dev` will run the docker container in development mode accessible from `http://localhost:3000`
+The entire application is dockerized. Hence navigating to the project directory (where the `Dockerfile` is located and contains the `src` directory) and running `docker-compose up dev` will run the docker container in development mode accessible from `http://localhost:3000`
 
-Note: Run `docker compose stop` to stop the docker containers.
+Note: Run `docker-compose stop` to stop the docker containers.
 
 ## Application in Production mode
-The application build is dockerized to run on nginx. Hence navigating to the project directory (where the `Dockerfile` is located and contains the `src` directory) and  running `docker compose up prod` will run the docker container on nginx and the application will be acessible from `http://localhost:80`
+The application build is dockerized to run on nginx. Hence navigating to the project directory (where the `Dockerfile` is located and contains the `src` directory) and  running `docker-compose up prod` will run the docker container on nginx and the application will be acessible from `http://localhost:80`
 
-Note: Run `docker compose stop` to stop the docker containers.
+Note: Run `docker-compose stop` to stop the docker containers.
 
 ## Testing the Application
 
 ### Running the tests
 Units Tests are written for each of the testable components in the application using `Jest` and `Enzyme`.
 
-The test scripts are also dockerized. Hence running `docker compose up test` will run all the test scripts.
+The test scripts are also dockerized. Hence running `docker-compose up test` will run all the test scripts.
 
-Note: Run `docker compose stop` to stop the docker containers.
+Note: Run `docker-compose stop` to stop the docker containers.
 
 ### Structuring of unit tests
 

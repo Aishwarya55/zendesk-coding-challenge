@@ -3,7 +3,7 @@
 exports[`Renders correctly 1`] = `
 <Fragment>
   <div
-    class="card"
+    className="card"
   >
     <h2>
       Subscription

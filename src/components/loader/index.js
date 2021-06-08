@@ -6,7 +6,7 @@ class Loader extends Component {
 
   render() {
     return <>
-      {this.props.showLoader && <div class="loading">
+      {this.props.showLoader && <div className="loading">
         <div></div>
         <div></div>
         <div></div>

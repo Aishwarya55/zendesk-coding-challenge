@@ -102,7 +102,7 @@ export class Subscription extends Component {
 
         const costPreview = !this.state.isEnabled ? this.props.currentSubscription : this.props.costPreview
         return <>
-            <div class="card">
+            <div className="card">
                 <h2>
                     Subscription
         </h2>

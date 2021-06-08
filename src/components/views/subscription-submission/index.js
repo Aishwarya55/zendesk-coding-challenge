@@ -10,6 +10,13 @@ export class SubscriptionSubmission extends Component {
         this.props.history.push("/home/subscription")
     }
 
+    componentDidMount(){
+        //Redirect page when accessed directly without updating subscription
+        if(this.props.currentSubscription.cost.length === 0){
+            this.props.history.push("/home/subscription")
+        }
+    }
+
     render() {
         return <>
 
