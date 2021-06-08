@@ -95,10 +95,15 @@ Note: Run `docker compose stop` to stop the docker containers.
 The `__tests__` folder contains the following files
 
 `actions_test`: Contains test runners to perform unit testing on action creators of Redux.
+
 `subscription_reducer_test`: Contains test runners to perform unit testing on reducers of Redux.
+
 `subscription_component_test`: Contains test runners to perform unit testing for the subscription component
+
 `subscription_snapshot_test`: Contains test runners to perform snapshot testing for subscription component
+
 `subscription_submission_component_test`: Contains test runners to perform unit testing for the subscription submission component which appears after updating subscription
+
 `subscription_submission_snapshot_test`: Contains test runners to perform snapshot testing for subscription submission component
 
 ## Other available scripts
