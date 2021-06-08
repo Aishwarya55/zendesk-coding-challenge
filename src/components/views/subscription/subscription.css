@@ -1,83 +1,77 @@
-.label{
-    display: block;
-    flex: 1;
-    text-align: right;
-    margin-right: 32px
+.label {
+  display: block;
+  flex: 0.4;
 }
 
-.price{
-    text-align: right;
-    margin-right: 32px
+.seatInput {
+  width: 30px;
+  padding: 5px;
+  border: 1px solid #cccccc;
 }
 
-.seatInput{
-    width: 30px;
-    padding: 5px;
-    border: 1px solid #cccccc;
+.planSelect {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #cccccc;
 }
 
-.planSelect{
-    width: 80px;
-    padding: 5px;
-    border: 1px solid #cccccc;
+.subscriptionContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-.subscriptionContainer{
-    display: flex;
-    flex-direction: column;
+.formElement {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formComp {
+  flex: 1;
 }
 
-.formElement{
-    margin: 1.75rem;
-    display: flex;
-    align-items: center;
-}
-.formComp{
-    flex: 1
+.price {
+  flex: 0.4;
 }
 
-.outerContainer{
-
+.outerContainer {
 }
 
-.outerContainer button{
-    float: right;
-    padding: 8px;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-    color: #fff;
-    border: 0;
-    font-weight: 600;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    transition: background-color 0.25s;
+.outerContainer button {
+  float: right;
+  padding: 8px;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  color: #fff;
+  border: 0;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color 0.25s;
 }
 
-button:not(:disabled):not(.disabled){
-    cursor: pointer;
+button:not(:disabled):not(.disabled) {
+  cursor: pointer;
 }
 
-
-
-.outerContainer button:hover{
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
+.outerContainer button:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #117a8b;
 }
 
-.outerContainer button:disabled{
-    color: #fff;
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-    opacity: .65;
-
+.outerContainer button:disabled {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  opacity: 0.65;
 }
 
-.buttonContainer{
-    display:flex;
-    justify-content: center;
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.costEl{
-    text-align: left;
+.costEl {
+  text-align: left;
 }
