@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`subscription reducer should return initial state 1`] = `
+Object {
+  "costPreview": Object {
+    "cost": "",
+    "name": "",
+    "plan": "",
+    "seats": 0,
+  },
+  "currentSubscription": Object {
+    "cost": "",
+    "name": "Basic",
+    "plan": "basic",
+    "seats": 0,
+  },
+  "loading": false,
+  "previousSubscription": Object {
+    "cost": "",
+    "name": "Basic",
+    "plan": "basic",
+    "seats": 0,
+  },
+}
+`;

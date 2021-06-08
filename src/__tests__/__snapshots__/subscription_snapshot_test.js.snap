@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<Fragment>
+  <div
+    class="card"
+  >
+    <h2>
+      Subscription
+    </h2>
+    <div
+      className="outerContainer"
+    >
+      <div
+        className="subscriptionContainer"
+      >
+        <div
+          className="formElement"
+        >
+          <label
+            className="label"
+            htmlFor="plan"
+          >
+            Plan
+          </label>
+          <select
+            className="planSelect formComp"
+            name="plan"
+            onChange={[Function]}
+            value="good"
+          >
+            <option
+              value="basic"
+            >
+              Basic
+            </option>
+            <option
+              value="good"
+            >
+              Good
+            </option>
+            <option
+              value="better"
+            >
+              Better
+            </option>
+            <option
+              value="best"
+            >
+              Best
+            </option>
+          </select>
+        </div>
+        <div
+          className="formElement"
+        >
+          <label
+            className="label"
+            htmlFor="seat"
+          >
+            Seats
+          </label>
+          <input
+            className="seatInput formComp"
+            min="1"
+            name="seat"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="number"
+            value={5}
+          />
+        </div>
+        <div
+          className="formElement"
+        >
+          <div
+            className="formComp price"
+          >
+            Price
+          </div>
+          <div
+            className="formComp costEl"
+          >
+            $50
+            <Loader />
+          </div>
+        </div>
+      </div>
+      <div
+        className="buttonContainer"
+      >
+        <button
+          disabled={true}
+          onClick={[Function]}
+        >
+          Update Subscription
+        </button>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

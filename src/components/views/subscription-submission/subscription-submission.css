@@ -1,0 +1,56 @@
+.subscriptionSubContainer div{
+    display: flex;
+    margin-bottom: 16px
+}
+
+.subscriptionSubContainer span{
+    flex:1
+}
+
+.subscriptionsubContainer{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-width:400px;
+  padding: 32px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+  background: #fff;
+
+}
+
+.subscriptionSubContainer{
+    margin: 16px 0;
+    min-width:250px;
+  padding: 32px;
+
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 10px 1px rgb(0,0,0,0.09)
+}
+
+.curr{
+    background-color: rgba(23,162,184, 0.4)
+    ;
+}
+
+.currValue{
+    color: #0E5E6B;
+    font-weight: 700;
+}
+
+.back-btn{
+    font-size: 13px;
+    cursor: pointer;
+    color: #17a2b8;
+    font-weight:500;
+    padding: 8px 0;
+}
+
+.back-btn:hover{
+    color: #138496
+}

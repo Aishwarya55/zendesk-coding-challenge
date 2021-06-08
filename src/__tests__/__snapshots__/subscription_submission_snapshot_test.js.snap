@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<Fragment>
+  <div
+    className="subscriptionsubContainer"
+  >
+    <span
+      className="back-btn"
+      onClick={[Function]}
+    >
+      &lt;  Back to Subscription
+    </span>
+    <div
+      className="subscriptionSubContainer prev"
+    >
+      <h4>
+        Previous Subscription
+      </h4>
+      <div>
+        <span>
+          Plan
+        </span>
+        <span>
+          Good
+        </span>
+      </div>
+      <div>
+        <span>
+          Seats
+        </span>
+        <span>
+          5
+        </span>
+      </div>
+      <div>
+        <span>
+          Price
+        </span>
+        <span>
+          $
+          50
+        </span>
+      </div>
+    </div>
+    <div
+      className="subscriptionSubContainer curr"
+    >
+      <h4>
+        Current Subscription
+      </h4>
+      <div>
+        <span>
+          Plan
+        </span>
+        <span
+          className="currValue"
+        >
+          Best
+        </span>
+      </div>
+      <div>
+        <span>
+          Seats
+        </span>
+        <span
+          className="currValue"
+        >
+          5
+        </span>
+      </div>
+      <div>
+        <span>
+          Price
+        </span>
+        <span
+          className="currValue"
+        >
+          $
+          5000
+        </span>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;
