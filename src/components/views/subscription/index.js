@@ -23,11 +23,11 @@ export class Subscription extends Component {
     }
 
 
+    //Handles subscription form element changes
     changeSubscription(type, event, subscriptionData) {
 
-
-
         if (type === "seats") {
+            //Check if the seat value matches a digit (added to handle negative numbers)
             let num = event.target.value.match(/^\d+$/);
             if (num === null) {
 
@@ -47,6 +47,7 @@ export class Subscription extends Component {
         let fieldDirty = false
 
 
+        //Check if the fields have been modified with respect to current sunscription
         Object.keys(newSubcriptionData).forEach(key => {
 
             if (newSubcriptionData[key] !== this.props.currentSubscription[key])
@@ -54,6 +55,7 @@ export class Subscription extends Component {
 
         })
 
+        //Change Form elements based on target value
         this.setState({
             ...this.state,
             subscriptionData: {
@@ -72,18 +74,16 @@ export class Subscription extends Component {
     }
 
     validate(e, subscriptionData) {
+        //If seat field is empty, value from current subscription will be auto filled
         if (e.target.value.trim().length === 0) {
             e.target.value = this.props.currentSubscription.seats
             this.changeSubscription("seats", e, subscriptionData)
         }
     }
 
-    componentDidUpdate(prevProp, prevState) {
 
 
-
-    }
-
+    // Handle click of 'Update Subscrption' button
     updateNewSubscription() {
         this.props.updateSubscription({
             ...this.props.currentSubscription,
@@ -92,8 +92,6 @@ export class Subscription extends Component {
             this.props.history.push("/home/submission")
         })
     }
-
-
 
 
     render() {
@@ -105,14 +103,14 @@ export class Subscription extends Component {
             <div className="card">
                 <h2>
                     Subscription
-        </h2>
+                </h2>
                 <div className="outerContainer">
 
                     <div className="subscriptionContainer">
                         <div className="formElement">
                             <label htmlFor="plan" className="label">
                                 Plan
-            </label>
+                            </label>
                             <select name="plan" className="planSelect formComp" value={subscriptionData.plan} onChange={(e) => { this.changeSubscription("plan", e, subscriptionData) }}>
                                 <option value="basic">Basic</option>
                                 <option value="good">Good</option>
@@ -126,7 +124,7 @@ export class Subscription extends Component {
                         <div className="formElement">
                             <label htmlFor="seat" className="label">
                                 Seats
-            </label>
+                            </label>
                             <input className="seatInput formComp" type="number" name="seat" min="1" value={subscriptionData.seats} onChange={(e) => { this.changeSubscription("seats", e, subscriptionData) }} onBlur={(e) => { this.validate(e, subscriptionData) }} />
 
                         </div>
@@ -135,15 +133,12 @@ export class Subscription extends Component {
 
                             <div className="formComp price">
                                 Price
-            </div>
+                            </div>
                             <div className="formComp costEl">
                                 {!this.props.loading && `$${costPreview.cost}`}
                                 <Loader showLoader={this.props.loading} />
                             </div>
                         </div>
-
-
-
                     </div>
                     <div className="buttonContainer">
                         <button disabled={!this.state.isEnabled || this.props.loading} onClick={() => this.updateNewSubscription()} >Update Subscription</button>

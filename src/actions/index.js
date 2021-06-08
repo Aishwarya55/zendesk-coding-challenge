@@ -18,6 +18,7 @@ const ayncCallStarted = () => ({
     type: ASYNC_CALL_STARTED
   });
 
+//Fetch Cost preview from Backend server
 export const getPrice = (data) => async (dispatch) => {
     dispatch(ayncCallStarted())
     const response = await axios.post(`${BASE_URL}/preview`, data)
@@ -35,6 +36,7 @@ export const getPrice = (data) => async (dispatch) => {
     }
 }
 
+//Fetch Current Subscription from Backend server
 export const getCurrentSubscription = () => async(dispatch) => {
     dispatch(ayncCallStarted())
     const response = await axios.get(`${BASE_URL}/current`)
@@ -52,6 +54,7 @@ export const getCurrentSubscription = () => async(dispatch) => {
     }
 }
 
+//Update current subscription in backend server
 export const updateSubscription = (data) => async(dispatch) => {
     dispatch(ayncCallStarted())
     const response = await axios.put(`${BASE_URL}/current`, data)

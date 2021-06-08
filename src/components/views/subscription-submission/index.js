@@ -6,6 +6,7 @@ import "./subscription-submission.css"
 import { withRouter } from "react-router-dom"
 export class SubscriptionSubmission extends Component {
 
+    //Handles Back button click
     goBack() {
         this.props.history.push("/home/subscription")
     }
