@@ -51,7 +51,7 @@ src
 |       |    └── index.js
 |       subscription-submission
 |       |     └── index.js
-|        └── other components......
+|       └── other components......
 ├── reducers
 ├── store
 ├── actions
