@@ -32,11 +32,11 @@ You will need the following installed before running the application
  1. Git clone [zendesk-coding-challenge](https://github.com/Aishwarya55/zendesk-coding-challenge.git) or download zip
  2. Run the App by typing `docker-compose up dev`. This runs the application in the development mode and the application can directly be accessed by navigating to `http://localhost:3000` in your web browser.
 
- # About the application and Usage
+ # About the application and usage
  ## Project Structure
  The entire application is structured as separate components and the state management is achieved using Redux while the UI or the View of the application is achieved using React.
 
-The main code of the application is present within the `src` folder.
+The main code of the application is present within the `src` directory.
 The project is structured as shown below
 
  ```
@@ -58,15 +58,15 @@ src
 └── index.js
 ```
 
-The actions folder contains all Redux action creators and the reducers folder contains the reducers to specify the state transformation by the actions.
+The `actions` directory contains all Redux action creators and the `reducers` directory contains the reducers to specify the state transformation by the actions.
 
-The components folder contains all components for the view and also shared components. The view folders contains the pages in the application. The application contains only one page which is the `home` and the `subscription` and `subscription-submission` are sub components of the `home` page.
+The `components` directory contains all components for the view and also shared components. The `view` directory contains the pages in the application. The application contains only one page which is the `home` and the `subscription` and `subscription-submission` are sub components of the `home` page.
 
 The `loader` component is a shared component which displays the loder on a page and the `navigation` component defined the global routing of the application with respect to the different pages using `react-router`.
 
-The `store` folders defined the Redux store which will be linked to the React application for state management.
+The `store` directory defined the Redux store which will be linked to the React application for state management.
 
-All the unit tests are present within the `__test__` folder.
+All the unit tests are present within the `__test__` directory.
 
 ## Data for the application
 The data for the application is fetched using mock server written using `miragejs`. The mocked data will be used in all three modes: development, test and production. The mock server is available in the file `mock-server.js`
@@ -92,7 +92,7 @@ Note: Run `docker-compose stop` to stop the docker containers.
 
 ### Structuring of unit tests
 
-The `__tests__` folder contains the following files
+The `__tests__` directory contains the following files
 
 `actions_test`: Contains test runners to perform unit testing on action creators of Redux.
 
@@ -118,7 +118,7 @@ Runs the application in development mode and requires packages to be installed u
 Launches the test runner in the interactive watch mode
 
 ### `npm run build`
-Builds the app for production to the `build` folder.
+Builds the app for production to the `build` directory.
 
 ### `npm run docker-stop`
 Stops the running docker containers
